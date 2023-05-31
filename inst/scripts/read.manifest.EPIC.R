@@ -30,7 +30,7 @@ read.manifest.EPIC <- function(file) {
         skip = assay.line + 1L,
         colClasses = colClasses,
         nrows = control.line - assay.line - 2L)
-    manifest$Name = manifest$Name
+    # manifest$Name = manifest$Name
     manifest$AddressA_ID <- gsub("^0*", "", manifest$AddressA_ID)
     manifest$AddressB_ID <- gsub("^0*", "", manifest$AddressB_ID)
     TypeI <- manifest[
